@@ -32,3 +32,11 @@ DB_DATABASE=laraveldb
 DB_USERNAME=mariadb
 DB_PASSWORD=p@ssw0rd
 ```
+
+### Migrate database
+
+Run the following command.
+
+```bash
+docker-compose run app ash -c 'cd <app_dir> && php artisan migrate'
+```
