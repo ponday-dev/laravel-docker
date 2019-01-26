@@ -15,6 +15,7 @@ services:
       - mariadb
     volumes:
       - .:/var/www/html
+    workind_dir: /var/www/html/{{app_dir}}
   mariadb:
     image: mariadb:latest
     volumes:
